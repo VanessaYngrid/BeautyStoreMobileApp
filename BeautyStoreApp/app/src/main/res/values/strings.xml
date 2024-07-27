@@ -1,0 +1,129 @@
+<resources>
+    <string name="app_name">BeautyStoreApp</string>
+
+    //Login Page
+    <string name="welcome_message_text_view">Illuminate your Beauty</string>
+    <string name="registration_note_text_view">Does not have an account? Register!</string>
+    <string name="client_email_edit_text">Enter your email</string>
+    <string name="client_password_edit_text">Enter your password</string>
+    <string name="login_button">Login</string>
+    <string name="registration_button">Register</string>
+
+    //Registration Page
+    <string name="create_account_title_text_view">Create an Account</string>
+    <string name="fill_info_text_view">Please, Fill your information below</string>
+    <string name="register_fname_text_view">First Name</string>
+    <string name="register_lname_text_view">Last Name</string>
+    <string name="register_address_text_view">Address</string>
+    <string name="register_address_edit_text">Address</string>
+    <string name="register_email_text_view">Email</string>
+    <string name="register_password_text_view">Password</string>
+    <string name="register_fname_edit_text">First Name</string>
+    <string name="register_lname_edit_text">Last Name</string>
+    <string name="register_email_edit_text">Email</string>
+    <string name="register_password_edit_text">Password</string>
+    <string name="create_account_button">Create Account</string>
+
+    //MainActivity
+    <string name="welcome_tool_bar"> </string>
+
+    //NavBar icons
+    <string name="home_item">Home</string>
+    <string name="profile_item">Profile</string>
+    <string name="tips_item">Tips</string>
+    <string name="staff_item">Comments</string>
+    <string name="logout_item">Logout</string>
+
+    //fragment_home
+    <string name="category_title_text_view">Category</string>
+    <string name="makeup_category_text_view">Makeup</string>
+    <string name="skincare_category_text_view">Skincare</string>
+    <string name="haircare_category_text_view">Haircare</string>
+    <string name="fragrance_category_text_view">Fragrance</string>
+    <string name="see_all_products_button">See All Products</string>
+
+    <string name="product_name_text_view">Product Name</string>
+    <string name="product_brand_text_view">Brand</string>
+    <string name="product_price_text_view">Price</string>
+    <string name="product_category_text_view">Category</string>
+
+    <string name="best_seller_product_name1"> </string>
+    <string name="best_seller_product_name2"> </string>
+    <string name="best_seller_product_name3"> </string>
+    <string name="best_seller_product1_brand"> </string>
+    <string name="best_seller_product2_brand"> </string>
+    <string name="best_seller_product3_brand"> </string>
+    <string name="best_seller_product1_price"> </string>
+    <string name="best_seller_product2_price"> </string>
+    <string name="best_seller_product3_price"> </string>
+    <string name="best_seller_product1_category"> </string>
+    <string name="best_seller_product2_category"> </string>
+    <string name="best_seller_product3_category"> </string>
+
+    <string name="my_account_title">My Account</string>
+    <string name="profile_card_title">Personal Information</string>
+    <string name="user_fname_text_view">First Name</string>x
+    <string name="user_lname_text_view">Last Name</string>
+    <string name="user_address_text_view">Address</string>
+    <string name="update_profile_card">Update Profile</string>
+    <string name="contact_us_card">Contact Us</string>
+    <string name="logout_card">Logout</string>
+
+    //All Products Fragment
+    <string name="prd_name_text_view">Product Name</string>
+    <string name="prd_brand_text_view">Brand</string>
+    <string name="prd_price_text_view">Price</string>
+    <string name="prd_category_text_view">Category</string>
+    <string name="products_title_text_view">Our Products</string>
+
+    //Error field required (Login)
+    <string name="error_field_required">This field is required</string>
+
+    //Update Profile Fragment
+    <string name="update_profile_text_view">Update Profile</string>
+    <string name="update_instruction_text_view">Update your account information</string>
+    <string name="update_fname_edit_text">First Name </string>
+    <string name="update_lname_edit_text">Last Name</string>
+    <string name="update_address_edit_text">Address</string>
+    <string name="update_email_edit_text">Email</string>
+    <string name="update_password_edit_text">Password</string>
+    <string name="save_update_button">Save Update</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    //Tips Fragment
+    <string name="title_text_view2">Beauty Tips</string>
+    <string name="prompt_text_view2">Share your beauty tip:</string>
+    <string name="tip_topic_edit_text">Enter topic</string>
+    <string name="tip_comment_edit_text">Enter your tip</string>
+    <string name="tip_comments_text_view">Your beauty tips will appear here</string>
+    <string name="add_tip_button">Add Tip</string>
+    <string name="see_all_tips_button">See All Tips</string>
+
+    //All tips Fragment
+    <string name="all_tips_title_text_view">Beauty Tips</string>
+    <string name="all_tips_message_text_view">See all the tips our community has left</string>
+    <string name="podcast_button">Podcast</string>
+    <string name="scrollview_content_description">View with dynamic information</string>
+
+    //Contact Us
+    <string name="title_contact_us">Contact Us</string>
+    <string name="email_text_view">email</string>
+    <string name="phone_number_text_view">phone number</string>
+    <string name="address_text_view">address</string>
+
+    //Comments and feedback Fragment
+    <string name="comment_title_text_view">Leave a Feedback</string>
+    <string name="comment_message_text_view">We value your feedback!</string>
+    <string name="rate_text_view">Rate Your Experience</string>
+    <string name="feedback_edit_text">Write your feedback here</string>
+    <string name="add_feedback_button">Add Feedback</string>
+
+    <!-- Rating Stars Descriptions -->
+    <string name="star_1">Star 1</string>
+    <string name="star_2">Star 2</string>
+    <string name="star_3">Star 3</string>
+    <string name="star_4">Star 4</string>
+    <string name="star_5">Star 5</string>
+
+</resources>

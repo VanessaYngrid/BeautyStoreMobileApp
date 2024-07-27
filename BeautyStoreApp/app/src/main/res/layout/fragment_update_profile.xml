@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".UpdateProfileFragment">
+
+    <TextView
+        android:id="@+id/update_profile_text_view"
+        android:layout_width="300dp"
+        android:layout_height="48dp"
+        android:text="@string/update_profile_text_view"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.054" />
+
+    <TextView
+        android:id="@+id/update_instruction_text_view"
+        android:layout_width="300dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="5dp"
+        android:text="@string/update_instruction_text_view"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="@+id/update_profile_text_view"
+        app:layout_constraintStart_toStartOf="@+id/update_profile_text_view"
+        app:layout_constraintTop_toBottomOf="@+id/update_profile_text_view" />
+
+    <EditText
+        android:id="@+id/update_fname_edit_text"
+        android:layout_width="300dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="28dp"
+        android:background="#EDEDE9"
+        android:ems="10"
+        android:hint="@string/update_fname_edit_text"
+        android:inputType="text"
+        android:padding="8dp"
+        app:layout_constraintEnd_toEndOf="@+id/update_profile_text_view"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/update_profile_text_view"
+        app:layout_constraintTop_toBottomOf="@+id/update_instruction_text_view" />
+
+    <EditText
+        android:id="@+id/update_lname_edit_text"
+        android:layout_width="300dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="25dp"
+        android:background="#EDEDE9"
+        android:ems="10"
+        android:hint="@string/update_lname_edit_text"
+        android:inputType="text"
+        android:padding="8dp"
+        app:layout_constraintEnd_toEndOf="@+id/update_fname_edit_text"
+        app:layout_constraintStart_toStartOf="@+id/update_fname_edit_text"
+        app:layout_constraintTop_toBottomOf="@+id/update_fname_edit_text" />
+
+    <EditText
+        android:id="@+id/update_address_edit_text"
+        android:layout_width="300dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="20dp"
+        android:background="#EDEDE9"
+        android:ems="10"
+        android:hint="@string/update_address_edit_text"
+        android:padding="8dp"
+        android:inputType="text|textEmailAddress"
+        app:layout_constraintEnd_toEndOf="@+id/update_lname_edit_text"
+        app:layout_constraintStart_toStartOf="@+id/update_lname_edit_text"
+        app:layout_constraintTop_toBottomOf="@+id/update_lname_edit_text" />
+
+    <EditText
+        android:id="@+id/update_email_edit_text"
+        android:layout_width="300dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="20dp"
+        android:background="#EDEDE9"
+        android:ems="10"
+        android:hint="@string/update_email_edit_text"
+        android:padding="8dp"
+        android:inputType="text|textEmailAddress"
+        app:layout_constraintEnd_toEndOf="@+id/update_address_edit_text"
+        app:layout_constraintStart_toStartOf="@+id/update_address_edit_text"
+        app:layout_constraintTop_toBottomOf="@+id/update_address_edit_text" />
+
+    <EditText
+        android:id="@+id/update_password_edit_text"
+        android:layout_width="300dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="20dp"
+        android:background="#EDEDE9"
+        android:ems="10"
+        android:hint="@string/update_password_edit_text"
+        android:padding="8dp"
+        android:inputType="text|textPassword"
+        app:layout_constraintEnd_toEndOf="@+id/update_email_edit_text"
+        app:layout_constraintStart_toStartOf="@+id/update_email_edit_text"
+        app:layout_constraintTop_toBottomOf="@+id/update_email_edit_text" />
+
+    <Button
+        android:id="@+id/save_update_button"
+        style="@style/ButtonStyle"
+        android:layout_width="200dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="30dp"
+        android:text="@string/save_update_button"
+        app:layout_constraintEnd_toEndOf="@+id/update_password_edit_text"
+        app:layout_constraintStart_toStartOf="@+id/update_password_edit_text"
+        app:layout_constraintTop_toBottomOf="@+id/update_password_edit_text" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

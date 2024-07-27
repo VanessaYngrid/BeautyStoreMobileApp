@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".BeautyTipsFragment">
+
+    <TextView
+        android:id="@+id/title_text_view2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:text="@string/title_text_view2"
+        android:textColor="#EF476F"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.058" />
+
+    <TextView
+        android:id="@+id/prompt_text_view2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/prompt_text_view2"
+        android:textSize="16sp"
+        android:textAlignment="center"
+        app:layout_constraintTop_toBottomOf="@id/title_text_view2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp" />
+
+    <EditText
+        android:id="@+id/tip_topic_edit_text"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="15dp"
+        android:hint="@string/tip_topic_edit_text"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="@+id/prompt_text_view2"
+        app:layout_constraintStart_toStartOf="@+id/prompt_text_view2"
+        app:layout_constraintTop_toBottomOf="@id/prompt_text_view2" />
+
+    <EditText
+        android:id="@+id/tip_comment_edit_text"
+        android:layout_width="350dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="8dp"
+        android:hint="@string/tip_comment_edit_text"
+        android:inputType="textMultiLine"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="@+id/tip_topic_edit_text"
+        app:layout_constraintStart_toStartOf="@+id/tip_topic_edit_text"
+        app:layout_constraintTop_toBottomOf="@id/tip_topic_edit_text" />
+
+    <ScrollView
+        android:id="@+id/tip_comments_scroll_view"
+        android:layout_width="0dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="30dp"
+        app:layout_constraintEnd_toEndOf="@+id/tip_comment_edit_text"
+        app:layout_constraintStart_toStartOf="@+id/tip_comment_edit_text"
+        app:layout_constraintTop_toBottomOf="@id/tip_comment_edit_text">
+
+        <TextView
+            android:id="@+id/tip_comments_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="@string/tip_comments_text_view"
+            android:textColor="@color/black"
+            android:textSize="14sp" />
+    </ScrollView>
+
+    <Button
+        android:id="@+id/add_tip_button"
+        style="@style/ButtonStyle"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="45dp"
+        android:text="@string/add_tip_button"
+        app:layout_constraintEnd_toEndOf="@+id/tip_comments_scroll_view"
+        app:layout_constraintStart_toStartOf="@+id/tip_comments_scroll_view"
+        app:layout_constraintTop_toBottomOf="@+id/tip_comments_scroll_view" />
+
+    <Button
+        android:id="@+id/see_all_tips_button"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/see_all_tips_button"
+        style="@style/ButtonStyle"
+        app:layout_constraintEnd_toEndOf="@+id/add_tip_button"
+        app:layout_constraintStart_toStartOf="@+id/add_tip_button"
+        app:layout_constraintTop_toBottomOf="@+id/add_tip_button" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

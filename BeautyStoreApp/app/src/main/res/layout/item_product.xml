@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="170dp"
+    android:layout_marginTop="10dp"
+    android:layout_marginStart="15dp"
+    android:layout_marginEnd="15dp"
+    android:padding="5dp"
+    android:background="@drawable/cardbackground">
+
+    <ImageView
+        android:id="@+id/prd_image_image_view"
+        android:layout_width="140dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:scaleType="centerCrop"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="15dp"/>
+
+    <TextView
+        android:id="@+id/prd_name_text_view"
+        android:layout_width="190dp"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/prd_image_image_view"
+        android:layout_alignParentTop="true"
+        android:padding="4dp"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        android:textColor="@android:color/black"
+        android:text="@string/prd_name_text_view"/>
+
+    <TextView
+        android:id="@+id/prd_brand_text_view"
+        android:layout_width="190dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/prd_name_text_view"
+        android:layout_alignStart="@id/prd_name_text_view"
+        android:padding="4dp"
+        android:textSize="14sp"
+        android:layout_marginTop="15dp"
+        android:textColor="@android:color/black"
+        android:text="@string/prd_brand_text_view"/>
+
+    <TextView
+        android:id="@+id/prd_price_text_view"
+        android:layout_width="190dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/prd_brand_text_view"
+        android:layout_alignStart="@id/prd_brand_text_view"
+        android:padding="4dp"
+        android:textSize="14sp"
+        android:textColor="@android:color/black"
+        android:text="@string/prd_price_text_view"/>
+
+    <TextView
+        android:id="@+id/prd_category_text_view"
+        android:layout_width="190dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/prd_price_text_view"
+        android:layout_alignStart="@id/prd_price_text_view"
+        android:padding="4dp"
+        android:textSize="14sp"
+        android:textColor="@android:color/black"
+        android:text="@string/prd_category_text_view"/>
+
+</RelativeLayout>

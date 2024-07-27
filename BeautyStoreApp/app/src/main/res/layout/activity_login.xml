@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E3D5CA"
+    tools:context=".LoginActivity">
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/beauty_cover_image"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="-50dp"
+        android:layout_marginBottom="320dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        app:shapeAppearanceOverlay="@style/RoundedBottomCorners"
+        app:srcCompat="@drawable/beautycoverlog" />
+
+    <TextView
+        android:id="@+id/welcome_message_text_view"
+        android:layout_width="300dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/welcome_message_text_view"
+        android:textAlignment="center"
+        android:textColor="#7F4F24"
+        android:textSize="18dp"
+        app:layout_constraintEnd_toEndOf="@+id/beauty_cover_image"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/beauty_cover_image" />
+
+    <EditText
+        android:id="@+id/client_email_edit_text"
+        android:layout_width="300dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="15dp"
+        android:background="#EDEDE9"
+        android:ems="10"
+        android:hint="@string/client_email_edit_text"
+        android:inputType="text|textEmailAddress"
+        android:textSize="16dp"
+        android:padding="8dp"
+        app:layout_constraintEnd_toEndOf="@+id/welcome_message_text_view"
+        app:layout_constraintStart_toStartOf="@+id/welcome_message_text_view"
+        app:layout_constraintTop_toBottomOf="@+id/welcome_message_text_view" />
+
+    <!--hint: para que al momento del usuario digitar, el texto definido desaparezca -->
+    <EditText
+        android:id="@+id/client_password_edit_text"
+        android:layout_width="300dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="10dp"
+        android:background="#EDEDE9"
+        android:ems="10"
+        android:hint="@string/client_password_edit_text"
+        android:inputType="text|textPassword"
+        android:radius="25dp"
+        android:padding="8dp"
+        android:textSize="16dp"
+        app:layout_constraintEnd_toEndOf="@+id/client_email_edit_text"
+        app:layout_constraintStart_toStartOf="@+id/client_email_edit_text"
+        app:layout_constraintTop_toBottomOf="@+id/client_email_edit_text" />
+
+    <Button
+        android:id="@+id/login_button"
+        style="@style/ButtonStyle"
+        android:layout_width="140dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="15dp"
+        android:text="@string/login_button"
+        app:layout_constraintStart_toStartOf="@+id/registration_note_text_view"
+        app:layout_constraintTop_toBottomOf="@+id/registration_note_text_view" />
+
+    <Button
+        android:id="@+id/registration_button"
+        style="@style/ButtonStyle"
+        android:layout_width="140dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="15dp"
+        android:text="@string/registration_button"
+        app:layout_constraintEnd_toEndOf="@+id/registration_note_text_view"
+        app:layout_constraintTop_toBottomOf="@+id/registration_note_text_view" />
+
+    <TextView
+        android:id="@+id/registration_note_text_view"
+        android:layout_width="300dp"
+        android:layout_height="23dp"
+        android:layout_marginTop="5dp"
+        android:text="@string/registration_note_text_view"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="@+id/client_password_edit_text"
+        app:layout_constraintStart_toStartOf="@+id/client_password_edit_text"
+        app:layout_constraintTop_toBottomOf="@+id/client_password_edit_text" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

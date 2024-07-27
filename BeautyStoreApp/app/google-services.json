@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "264247483144",
+    "project_id": "beautystoreapp-f9785",
+    "storage_bucket": "beautystoreapp-f9785.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:264247483144:android:e94e99470d4e1369d5eabd",
+        "android_client_info": {
+          "package_name": "com.example.beautystoreapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC6ObjY97bh_eyLiyF3gT-AEOKObyyAV3Y"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
