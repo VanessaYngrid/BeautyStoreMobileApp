@@ -50,7 +50,7 @@
     <EditText
         android:id="@+id/tip_comment_edit_text"
         android:layout_width="350dp"
-        android:layout_height="80dp"
+        android:layout_height="60dp"
         android:layout_marginTop="8dp"
         android:hint="@string/tip_comment_edit_text"
         android:inputType="textMultiLine"
