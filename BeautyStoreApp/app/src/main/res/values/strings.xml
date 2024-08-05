@@ -111,6 +111,7 @@
     <string name="email_text_view">email</string>
     <string name="phone_number_text_view">phone number</string>
     <string name="address_text_view">address</string>
+    <string name="see_maps_button">Open Google Maps</string>
 
     //Comments and feedback Fragment
     <string name="comment_title_text_view">Leave a Feedback</string>
@@ -125,5 +126,6 @@
     <string name="star_3">Star 3</string>
     <string name="star_4">Star 4</string>
     <string name="star_5">Star 5</string>
+    <string name="title_activity_maps">MapsActivity</string>
 
 </resources>

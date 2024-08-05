@@ -30,7 +30,7 @@
         android:id="@+id/iconEmail"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="64dp"
+        android:layout_marginTop="15dp"
         android:src="@drawable/icon_email"
         app:layout_constraintEnd_toEndOf="@+id/title_contact_us"
         app:layout_constraintHorizontal_bias="0.504"
@@ -54,7 +54,7 @@
         android:id="@+id/iconPhone"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="15dp"
         android:src="@drawable/icon_phone"
         app:layout_constraintEnd_toEndOf="@+id/email_text_view"
         app:layout_constraintStart_toStartOf="@+id/email_text_view"
@@ -98,5 +98,17 @@
         app:layout_constraintEnd_toEndOf="@+id/iconAddress"
         app:layout_constraintStart_toStartOf="@+id/iconAddress"
         app:layout_constraintTop_toBottomOf="@+id/iconAddress" />
+
+    <Button
+        android:id="@+id/see_maps_button"
+        android:layout_width="140dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/see_maps_button"
+        style="@style/ButtonStyle"
+        app:layout_constraintEnd_toEndOf="@+id/address_text_view"
+        app:layout_constraintStart_toStartOf="@+id/address_text_view"
+        app:layout_constraintTop_toBottomOf="@+id/address_text_view" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

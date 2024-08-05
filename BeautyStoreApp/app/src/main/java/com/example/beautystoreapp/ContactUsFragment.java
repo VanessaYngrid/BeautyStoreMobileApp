@@ -1,5 +1,6 @@
 package com.example.beautystoreapp;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.annotation.NonNull;
@@ -10,6 +11,7 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.TextView;
 
 import com.google.firebase.database.DataSnapshot;
@@ -24,6 +26,7 @@ public class ContactUsFragment extends Fragment {
     private TextView emailTextView;
     private TextView phoneTextView;
     private TextView addressTextView;
+    private Button openGoogleMapsButton;
     private DatabaseReference databaseRef;
 
 
@@ -43,8 +46,17 @@ public class ContactUsFragment extends Fragment {
         emailTextView = v.findViewById(R.id.email_text_view);
         phoneTextView = v.findViewById(R.id.phone_number_text_view);
         addressTextView = v.findViewById(R.id.address_text_view);
+        openGoogleMapsButton = v.findViewById(R.id.see_maps_button);
 
         fetchDataFromFirebase();
+
+        openGoogleMapsButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getActivity(), MapsActivity.class);
+                startActivity(intent);
+            }
+        });
 
         return v;
     }
